@@ -13,6 +13,7 @@ import { NavComponent } from './pages/nav/nav.component';
 import { LoginComponent } from './pages/login/login.component';
 import { ProductoComponent } from './pages/producto/producto.component';
 import { ProductoEdicionComponent } from './pages/producto/producto-edicion/producto-edicion.component';
+import { InicioComponent } from './pages/inicio/inicio.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ProductoEdicionComponent } from './pages/producto/producto-edicion/prod
     NavComponent,
     LoginComponent,
     ProductoComponent,
-    ProductoEdicionComponent
+    ProductoEdicionComponent,
+    InicioComponent
   ],
   imports: [
     BrowserModule,
