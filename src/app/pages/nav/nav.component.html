@@ -29,9 +29,9 @@
     </svg>
     <nav class="nav__cont">
       <ul class="nav">
-        <li class=" nav__itemsa" routerLink="/home_admin">
+        <li class=" nav__itemsa">
           <img id="logo" src="../../../assets/img/logo.png" alt="">
-          <a id="titulo" routerLink="/home_admin">Bazar Luzy</a>
+          <a id="titulo" routerLink="/home_admin/dashboard">Bazar Luzy</a>
         </li>
         <hr>
 
@@ -63,11 +63,11 @@
           <a routerLink="/home_admin/usuarios">Usuarios</a>
         </li>
 
-        <li class="nav__items" routerLink="/BL">
+        <li class="nav__items" (click)="openDialog()">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 650">
             <use xlink:href="#exit"></use>
           </svg>
-          <a routerLink="/BL">Exit</a>
+          <a mat-button>Exit</a>
         </li>
 
       </ul>

@@ -1,3 +1,4 @@
+import { ConfiExitComponent } from './../pages/nav/confi-exit/confi-exit.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTableModule } from '@angular/material/table';
@@ -12,6 +13,9 @@ import {MatCardModule} from '@angular/material/card';
 import { MatPaginatorImpl } from '../_shared/mat-paginator';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatDialogModule} from '@angular/material/dialog';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [],
@@ -27,7 +31,9 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     MatSortModule,
     MatCardModule,
     MatSnackBarModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatDialogModule,
+    BrowserAnimationsModule
   ],
   exports:[
     MatButtonModule,
@@ -40,7 +46,9 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     MatSortModule,
     MatCardModule,
     MatSnackBarModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatDialogModule,
+    BrowserAnimationsModule
   ],
   providers:[
     {provide: MatPaginatorIntl, useClass: MatPaginatorImpl}

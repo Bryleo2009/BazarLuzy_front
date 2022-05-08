@@ -14,6 +14,10 @@ import { LoginComponent } from './pages/login/login.component';
 import { ProductoComponent } from './pages/producto/producto.component';
 import { ProductoEdicionComponent } from './pages/producto/producto-edicion/producto-edicion.component';
 import { MenuComponent } from './pages/menu/menu.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import { MatButtonModule } from '@angular/material/button';
+import { ConfiExitComponent } from './pages/nav/confi-exit/confi-exit.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +28,9 @@ import { MenuComponent } from './pages/menu/menu.component';
     LoginComponent,
     ProductoComponent,
     ProductoEdicionComponent,
-    MenuComponent
+    MenuComponent,
+    ConfiExitComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,8 +38,12 @@ import { MenuComponent } from './pages/menu/menu.component';
     BrowserAnimationsModule,
     MaterialModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatDialogModule,
+    MatButtonModule
   ],
+  
+  entryComponents: [ConfiExitComponent],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -1,3 +1,4 @@
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { MenuComponent } from './pages/menu/menu.component';
 import { ProductoEdicionComponent } from './pages/producto/producto-edicion/producto-edicion.component';
 import { ProductoComponent } from './pages/producto/producto.component';
@@ -30,6 +31,10 @@ const routes: Routes = [
           { path: 'edicion/:id', component: ProductoEdicionComponent },
         ],
       },
+      {
+        path: 'dashboard',
+        component: DashboardComponent
+      }
     ],
   }, //menu de vagación
   { path: 'login', component: LoginComponent },
