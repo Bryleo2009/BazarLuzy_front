@@ -1,3 +1,4 @@
+import { MenuComponent } from './pages/menu/menu.component';
 import { ProductoEdicionComponent } from './pages/producto/producto-edicion/producto-edicion.component';
 import { ProductoComponent } from './pages/producto/producto.component';
 import { LoginComponent } from './pages/login/login.component';
@@ -10,7 +11,7 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   //ruta que se manejará
   {
-    path: 'home',
+    path: 'home_admin',
     component: NavComponent,
     children: [
       {
@@ -32,6 +33,7 @@ const routes: Routes = [
     ],
   }, //menu de vagación
   { path: 'login', component: LoginComponent },
+  { path: 'BL', component: MenuComponent },
 ];
 
 @NgModule({

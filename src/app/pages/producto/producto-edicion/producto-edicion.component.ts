@@ -77,7 +77,7 @@ export class ProductoEdicionComponent implements OnInit {
         })
       });
     }
-    this.router.navigate(['/home/Productos']); //link a donde se dirige
+    this.router.navigate(['/home_admin/Productos']); //link a donde se dirige
   }
 
 }

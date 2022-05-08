@@ -76,7 +76,7 @@ export class UsuarioEdicionComponent implements OnInit {
         })
       });
     }
-    this.router.navigate(['/home/usuarios']); //link a donde se dirige
+    this.router.navigate(['/home_admin/usuarios']); //link a donde se dirige
   }
 
 }
