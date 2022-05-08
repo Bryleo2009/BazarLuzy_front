@@ -1,3 +1,4 @@
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { MenuComponent } from './pages/menu/menu.component';
 import { ProductoEdicionComponent } from './pages/producto/producto-edicion/producto-edicion.component';
@@ -38,7 +39,8 @@ const routes: Routes = [
     ],
   }, //menu de vagación
   { path: 'login', component: LoginComponent },
-  { path: 'BL', component: MenuComponent },
+  { path: '', component: MenuComponent },
+  {path: '**', component: PageNotFoundComponent}
 ];
 
 @NgModule({
