@@ -16,7 +16,7 @@ import { MatPaginator } from '@angular/material/paginator';
 
 export class UsuarioComponent implements OnInit {
 
-  displayedColumns = ['id_usuario','userName','nombre_cargo','estado','acciones'];
+  displayedColumns = ['id_usuario','username','cargo','estado','acciones'];
   dataSource: MatTableDataSource<Usuario> = new MatTableDataSource();
   @ViewChild(MatSort) sort: MatSort = new MatSort;
   @ViewChild(MatPaginator)

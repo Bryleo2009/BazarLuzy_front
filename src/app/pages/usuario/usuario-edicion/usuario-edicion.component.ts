@@ -20,9 +20,9 @@ export class UsuarioEdicionComponent implements OnInit {
   ngOnInit(){
     this.form = new FormGroup({
       'id_usuario': new FormControl(0),
-      'userName': new FormControl(''),
+      'username': new FormControl(''),
       'password': new FormControl(''),
-      'nombre_cargo': new FormControl(''),
+      'cargo': new FormControl(''),
       'estado': new FormControl('')
     });
 
@@ -44,9 +44,9 @@ export class UsuarioEdicionComponent implements OnInit {
       this.usuarioService.listarPorId(this.id).subscribe(data => {
         this.form = new FormGroup({
           'id_usuario': new FormControl(data.id_usuario),
-          'userName': new FormControl(data.userName),
+          'username': new FormControl(data.username),
           'password': new FormControl(data.password),
-          'nombre_cargo': new FormControl(data.nombre_cargo),
+          'cargo': new FormControl(data.cargo),
           'estado': new FormControl(data.estado)
         });
       });
@@ -55,9 +55,9 @@ export class UsuarioEdicionComponent implements OnInit {
 
   operar(){
     this.usuario.id_usuario = this.form.value['id_usuario'];
-    this.usuario.userName = this.form.value['userName'];
+    this.usuario.username = this.form.value['username'];
     this.usuario.password = this.form.value['password'];
-    this.usuario.nombre_cargo = this.form.value['nombre_cargo'];
+    this.usuario.cargo = this.form.value['cargo'];
     this.usuario.estado = this.form.value['estado'];
 
     if(this.edicion){

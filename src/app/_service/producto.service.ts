@@ -10,7 +10,7 @@ import { Subject } from 'rxjs';
 export class ProductoService {
   ProductoCambio = new Subject<Producto[]>();
   mensajeCambio = new Subject<string>();
-  url: string = `${environment.HOST_URL}/Clase_Productos`; //lo que recibe
+  url: string = `${environment.HOST_URL}/ofsystem/Productos`; //lo que recibe
   constructor(private http: HttpClient) { }
 
   listar(){

@@ -2,8 +2,9 @@
 
 export class Usuario{
     id_usuario: number = 0;
-    userName: string = "";
+    username: string = "";
     password: string = "";
-    nombre_cargo: string = "";
-    estado: string = "";
+    cargo: string = "";
+    estado: boolean = true;
+	
 }

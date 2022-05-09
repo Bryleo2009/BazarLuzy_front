@@ -11,7 +11,7 @@ export class UsuarioService {
 
   usuarioCambio = new Subject<Usuario[]>();
   mensajeCambio = new Subject<string>();
-  url: string = `${environment.HOST_URL}/Clase_Usuarios`; //lo que recibe
+  url: string = `${environment.HOST_URL}/ofsystem/Usuarios`; //lo que recibe
   constructor(private http: HttpClient) { }
 
   listar(){
