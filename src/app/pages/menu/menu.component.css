@@ -139,6 +139,7 @@ section::after {
   left: -4000px;
 }
 
+
 #gooey-button {
     height: 50px;
     padding: 1rem;
@@ -148,9 +149,11 @@ section::after {
     filter: url("#gooey");
     position: relative;
     background-color: #5FBB97;
+    
 }
 #gooey-button:focus {
   outline: none;
+  
 }
 #gooey-button .bubbles {
   position: absolute;

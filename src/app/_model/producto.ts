@@ -1,7 +1,6 @@
 export class Producto{
-    id_Producto: number = 0;
-    userName: string = "";
-    password: string = "";
-    nombre_cargo: string = "";
-    estado: string = "";
+    id_Product : number = 0;
+    stock : number = 0;
+    nombre_product:string = "";
+    precio_unitario : number = 0;
 }

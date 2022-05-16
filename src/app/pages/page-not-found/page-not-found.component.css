@@ -187,6 +187,7 @@ body {
 }
 .button2:hover {
   border: 1px solid transparent;
+  cursor:pointer;
 }
 .button2:hover span {
   position: absolute;

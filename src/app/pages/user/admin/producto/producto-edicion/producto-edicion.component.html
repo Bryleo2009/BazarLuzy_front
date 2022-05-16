@@ -1,0 +1,38 @@
+<div class="body">
+    <mat-card>Ingreso de datos</mat-card>
+    <form class="example-container" [formGroup]="form" #frmProducto="ngForm" (ngSubmit)="operar()"><!---->
+        <div [hidden]="true">
+            <mat-form-field class="example-full-width" >
+                <input matInput placeholder="ID" required formControlName="id_Product">
+            </mat-form-field>
+        </div>
+        <br>
+        <mat-form-field class="example-full-width" style="width: 94%;">
+            <input matInput placeholder="Stock" required formControlName="stock">
+        </mat-form-field>
+        <mat-form-field class="example-full-width" style="width: 94%;">
+            <input matInput placeholder="Descripción del producto" required formControlName="nombre_product">
+        </mat-form-field>
+        <mat-form-field class="example-full-width" style="width: 94%;">
+            <input matInput placeholder="Precio Unitario" required formControlName="precio_unitario">
+        </mat-form-field>
+        <br>
+
+        <section class="layout">
+            <div class="">
+                <button class="boton_aceptar" mat-raised-button  [disabled]="frmProducto.invalid" type="submit" style="width: 100%;">
+                    <mat-icon>done</mat-icon>
+                    <span>Aceptar</span>
+                </button>
+            </div>
+            <div class="">
+                <button class="boton_cancelar" mat-raised-button  routerLink="/home_admin/productos" type="button" style="width: 100%;">
+                    <mat-icon style="color: #FFF;">close</mat-icon>
+                    <span style="color: #FFF;">Cancelar</span>
+                </button>
+            </div>
+        </section>
+    </form>
+    <br>
+    <hr>
+</div>

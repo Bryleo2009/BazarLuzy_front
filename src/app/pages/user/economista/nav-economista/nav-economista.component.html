@@ -1,0 +1,82 @@
+<mat-drawer-container class="example-container">
+
+    <mat-drawer style="width: 80px;" mode="side" opened>
+      <svg>
+        <defs>
+          <g id="one">
+            <path fill="#5FBB97" 
+            d="M256 448c0 17.67-14.33 32-32 32H32c-17.67 0-32-14.33-32-32s14.33-32 32-32h64V123.8L49.75 154.6C35.02 164.5 15.19 160.4 5.375 145.8C-4.422 131.1-.4531 111.2 14.25 101.4l96-64c9.828-6.547 22.45-7.187 32.84-1.594C153.5 41.37 160 52.22 160 64.01v352h64C241.7 416 256 430.3 256 448z"/>
+          </g>
+  
+          <g id="two">
+            <path fill="#5FBB97" 
+            d="M320 448c0 17.67-14.33 32-32 32H32c-13.08 0-24.83-7.953-29.7-20.09c-4.859-12.12-1.859-26 7.594-35.03l193.6-185.1c31.36-30.17 33.95-80 5.812-113.4c-14.91-17.69-35.86-28.12-58.97-29.38C127.4 95.83 105.3 103.9 88.53 119.9L53.52 151.7c-13.08 11.91-33.33 10.89-45.2-2.172C-3.563 136.5-2.594 116.2 10.48 104.3l34.45-31.3c28.67-27.34 68.39-42.11 108.9-39.88c40.33 2.188 78.39 21.16 104.4 52.03c49.8 59.05 45.2 147.3-10.45 200.8l-136 130H288C305.7 416 320 430.3 320 448z"/>
+          </g>
+  
+          <g id="three">
+            <path fill="#5FBB97" 
+            d="M320 344c0 74.98-61.02 136-136 136H103.6c-46.34 0-87.31-29.53-101.1-73.48c-5.594-16.77 3.484-34.88 20.25-40.47c16.75-5.609 34.89 3.484 40.47 20.25c5.922 17.77 22.48 29.7 41.23 29.7H184c39.7 0 72-32.3 72-72s-32.3-72-72-72H80c-13.2 0-25.05-8.094-29.83-20.41C45.39 239.3 48.66 225.3 58.38 216.4l131.4-120.4H32c-17.67 0-32-14.33-32-32s14.33-32 32-32h240c13.2 0 25.05 8.094 29.83 20.41c4.781 12.3 1.516 26.27-8.203 35.19l-131.4 120.4H184C258.1 208 320 269 320 344z"/>
+          </g>
+  
+          <g id="four">
+            <path fill="#5FBB97" 
+            d="M384 334.2c0 17.67-14.33 32-32 32h-32v81.78c0 17.67-14.33 32-32 32s-32-14.33-32-32v-81.78H32c-10.97 0-21.17-5.625-27.05-14.89c-5.859-9.266-6.562-20.89-1.875-30.81l128-270.2C138.6 34.33 157.8 27.56 173.7 35.09c15.97 7.562 22.78 26.66 15.22 42.63L82.56 302.2H256V160c0-17.67 14.33-32 32-32s32 14.33 32 32v142.2h32C369.7 302.2 384 316.6 384 334.2z"/>
+          </g>
+  
+          <g id="exit">
+            <path fill="#5FBB97"
+              d="M344.7 238.5l-144.1-136C193.7 95.97 183.4 94.17 174.6 97.95C165.8 101.8 160.1 110.4 160.1 120V192H32.02C14.33 192 0 206.3 0 224v64c0 17.68 14.33 32 32.02 32h128.1v72c0 9.578 5.707 18.25 14.51 22.05c8.803 3.781 19.03 1.984 26-4.594l144.1-136C354.3 264.4 354.3 247.6 344.7 238.5zM416 32h-64c-17.67 0-32 14.33-32 32s14.33 32 32 32h64c17.67 0 32 14.33 32 32v256c0 17.67-14.33 32-32 32h-64c-17.67 0-32 14.33-32 32s14.33 32 32 32h64c53.02 0 96-42.98 96-96V128C512 74.98 469 32 416 32z" />
+          </g>
+  
+        </defs>
+      </svg>
+      <nav class="nav__cont">
+        <ul class="nav">
+          <li class=" nav__itemsa">
+            <img id="logo" src="../../../assets/img/logo.png" alt="">
+            <a id="titulo" routerLink="/home_economista">Bazar Luzy</a>
+          </li>
+          <hr>
+  
+          <li class="nav__items" routerLink="/home_economista">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 650">
+              <use xlink:href="#one"></use>
+            </svg>
+            <a routerLink="/home_economista">Servicios</a>
+          </li>
+  
+          <li class="nav__items" routerLink="/home_economista/ventas">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 650">
+              <use xlink:href="#two"></use>
+            </svg>
+            <a routerLink="/home_economista/ventas">Ventas</a>
+          </li>
+  
+          <li class="nav__items" routerLink="/home_economista">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 650">
+              <use xlink:href="#three"></use>
+            </svg>
+            <a routerLink="/home_economista">Compras</a>
+          </li>
+  
+          <li class="nav__items" routerLink="/home_economista" style="padding-bottom: 40px;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 650">
+              <use xlink:href="#four"></use>
+            </svg>
+            <a routerLink="/home_economista">Flujo de Caja</a>
+          </li>
+  
+          <li class="nav__items" (click)="openDialog()">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 650">
+              <use xlink:href="#exit"></use>
+            </svg>
+            <a mat-button>Exit</a>
+          </li>
+  
+        </ul>
+      </nav>
+    </mat-drawer>
+    <mat-drawer-content>
+      <router-outlet></router-outlet>
+    </mat-drawer-content>
+  </mat-drawer-container>

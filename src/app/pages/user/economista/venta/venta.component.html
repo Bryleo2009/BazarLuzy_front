@@ -1,0 +1,51 @@
+<mat-toolbar style="background-color: #131515; color: #fff; text-align: center;">COMPROBANTE DE PAGOS</mat-toolbar>
+
+<router-outlet></router-outlet>
+<!--<div class="example-header">
+    <mat-form-field style="width: 94%;margin: 40px;" >
+        <input matInput (keyup)="applyFilter($event)" placeholder="Usuario a buscar" >
+    </mat-form-field>
+</div>-->
+<mat-table [dataSource]="dataSources" matSort>
+    <ng-container matColumnDef="id_cp">
+        <mat-header-cell mat-sort-header *matHeaderCellDef> ID COMPROBANTE</mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.id_cp}} </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="id_tc">
+        <mat-header-cell mat-sort-header *matHeaderCellDef> TIPO DE COMPROBANTE </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.id_tc}} </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="id_tp">
+        <mat-header-cell mat-sort-header *matHeaderCellDef> ID TIPO DE PAGO</mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.id_tp}} </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="fecha">
+        <mat-header-cell mat-sort-header *matHeaderCellDef> FECHA </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.fecha}} </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="monto_total">
+        <mat-header-cell mat-sort-header *matHeaderCellDef> MONTO TOTAL </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.monto_total}} </mat-cell>
+    </ng-container>
+    <!--<ng-container matColumnDef="id_ov">
+        <mat-header-cell mat-sort-header *matHeaderCellDef> ID ORDEN DE VENTA </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.id_ov}} </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="nombres">
+        <mat-header-cell mat-sort-header *matHeaderCellDef> NOMBRES </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.nombres}} </mat-cell>
+    </ng-container>-->
+    <ng-container matColumnDef="acciones">
+        <mat-header-cell *matHeaderCellDef> ACCIONES </mat-header-cell>
+        <mat-cell *matCellDef="let row">
+            <button mat-button [routerLink]="['imprimir',row.id_cp]" style="color: #555;">
+                <p>PRINT PDF</p>
+            </button>
+            <!-- <button mat-button (click)="sumar(row.id_cp)" style="color: #555;"> <p>SUMA TOTAL</p> </button>-->
+        </mat-cell>
+    </ng-container>
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+</mat-table>
+<mat-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page">
+</mat-paginator>
